@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="pviewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Otarea | WhiteBoard</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <script src="https://use.fontawesome.com/76d109b605.js"></script>
+    <link rel="stylesheet" href="./css/whiteboard.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<style>
+    body {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        border-radius: 50px;
+        margin-left: 10px;
+        height: 25px;
+        width: 25px;
+        margin-bottom: 10px;
+    }
+
+    .zoom1 {
+        transition: transform .2s;
+        border-radius: 50px;
+        margin-left: 10px;
+        height: 50px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        color: #000;
+        text-align: center;
+        padding-left: 600px;
+        border-radius: 100px;
+    }
+
+    .zoom:hover {
+        transform: scale(1.5);
+    }
+
+    .zoom1:hover {
+        transform: scale(1.1);
+    }
+
+    
+</style>
+<header>
+    <div class="text">
+        <img src="Reapers.jpg" id="btn" class="zoom1" style="position: fixed; padding: 10px ;border-radius: 100px; bro"
+            width="200px" height="50px">
+    </div>
+</header>
+
+<body>
+    <canvas></canvas>
+    <main>
+        <div class="zoom" onclick="change_color(this)" style="background: blue;"></div>
+
+        <div class="zoom" onclick="change_color(this)" style="background: red;"></div>
+
+        <div class="zoom" onclick="change_color(this)" style="background: black;"></div>
+        <div class="zoom" onclick="change_color(this)" style="background: white;">
+
+        </div>
+        <section class="thickness">
+            <input type="number" class="stroke-weight" value="3" />
+        </section>
+        <button class="clear">X</button>
+    </main>
+    <script src="./js/whiteboard.js"></script>
+
+    <!-- footer start -->
+<footer class="footer-old">
+    <div class="container-old">
+        <div class="row-old">
+            <div class="footer-item-old footer-about-old">
+                <h2>About US</h2>
+                <p>Otarea ( Stands for " Oppertunity Transforming Areas" ) is a Ed-Tech Startup with a mission to
+                    empower the
+                    next generations
+                    by creating more Oppertunities for Learners in terms of Quality education, In-demand Skills and
+                    Inovations
+                </p>
+            </div>
+            <div class="footer-item-old footer-quick-links-old">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="support@otarea.in">Support & Help</a></li>
+                    <li><a href="network.html">Network & Partner</a></li>
+                    <li><a href="blog.html">Otarea Blog</a></li>
+                    <li><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScjvj-nv7tMQrPos51f87exoXP38EUMSAokA18jVo2dbY8kag/formResponse">Career
+                            at Otarea</a></li>
+                </ul>
+            </div>
+            <div class="footer-item-old footer-contact-old">
+                <h2>Contact us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Sabour, Bhagalpur, Bihar 803210 </p>
+                <p><i class="fas fa-phone"></i> +91 7644958700 </p>
+                <p><i class="fas fa-envelope"></i> support@otarea.in</p>
+                <div class="social-links-old">
+                    <a href="https://www.youtube.com/channel/UCcJZXbMKrfU3exQtbysZZ7w"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/OtareaEDU/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/otareaedu/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/otarea-edu/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/rpremOfficial"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-item-old footer-newsletter-old">
+                <h2>Newsletter</h2>
+                <form>
+                    <div class="input-group-old">
+                        <input type="text" placeholder="Your Email" class="form-control-old">
+                    </div>
+                    <button type="submit" class="btn-old btn-1-old"
+                        onclick="alert('Submitted Sucessfully')">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+</body>
+
+</html>
