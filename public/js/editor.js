@@ -9,6 +9,8 @@ let bannerPath;
 const publishBtn = document.querySelector('.publish-btn');
 const uploadInput = document.querySelector('#image-upload');
 
+
+
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
 })
@@ -66,7 +68,7 @@ publishBtn.addEventListener('click', () => {
         db.collection("blogs").doc(docName).set({
             title: blogTitleField.value,
             article: articleFeild.value,
-            bannerImage: bannerPath,
+            // bannerImage: bannerPath,
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
