@@ -1,0 +1,27 @@
+{
+  "name": "otarea_blog",
+  "version": "1.0.0",
+  "description": "website for otarea\r https://Otarea.in",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otarea/Otarea_old.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otarea/Otarea_old/issues"
+  },
+  "homepage": "https://github.com/Otarea/Otarea_old#readme",
+  "dependencies": {
+    "express-fileupload": "^1.3.1",
+    "express.js": "^1.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
