@@ -68,7 +68,7 @@ publishBtn.addEventListener('click', () => {
         db.collection("blogs").doc(docName).set({
             title: blogTitleField.value,
             article: articleFeild.value,
-            bannerImage: bannerPath,
+            // bannerImage: bannerPath,
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
