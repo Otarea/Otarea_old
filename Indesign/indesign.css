@@ -1,0 +1,119 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* global style */
+:root {
+  --main-color: #24caac;
+  --color-1: #ffba01;
+  --color-2: #f34f1c;
+  --color-3: #01a6f0;
+  --dark-800: #24292d;
+  --dark-700: #2f363e;
+  --white-900: #ffffff;
+  --white-800: rgba(255, 255, 255, 0.8);
+  --Shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+  background-color: var(--white-800);
+  overflow-x: hidden;
+  /* background-image: url("../docs/explosion-colored-powder-white-background.jpg");
+  background-image: no-repeat; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--dark-800);
+  z-index: 999;
+}
+.header-container {
+  position: relative;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.header-logo, .header-nav, .header-btn{
+    padding: 0 10px;
+}
+.header-nav{
+    justify-content: center;
+}
+.header-logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--white-800);
+}
+.header-logo img {
+  height: 40px;
+  padding: 5px;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+.header-nav ul li a{
+    color: var(--white-800);
+    font-size: 16px;
+    font-weight: 400;
+}
+.header-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header-btn a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero{
+    background: url(../assets/luxury-modern-dark-living-room-interior.jpg);
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

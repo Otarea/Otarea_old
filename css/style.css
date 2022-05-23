@@ -12,7 +12,7 @@
   --white-900: #ffffff;
   --white-800: rgba(255, 255, 255, 0.8);
   --Shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -322,7 +322,7 @@ p {
   width: 100%;
   height: 600px;
   /* transition: .5s ease; */
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
 }
 .hero {
   /* display: flex; */
@@ -333,7 +333,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
   text-align: center;
 }
 .hero .left {
@@ -972,4 +972,5 @@ a {
   }
   
 
+}
 }
